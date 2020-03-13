@@ -1,0 +1,6 @@
+framework module MLPDFReaderSDK {
+  umbrella header "MLPDFReaderSDK.h"
+
+  export *
+  module * { export * }
+}
