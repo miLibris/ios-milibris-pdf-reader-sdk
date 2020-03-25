@@ -17,3 +17,7 @@ xcuserdata/
 # CocoaPods
 Pods/
 Podfile.lock
+
+# Carthage
+Carthage/
+Cartfile.resolved
