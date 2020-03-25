@@ -4,9 +4,10 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
 
 * [Setup](#setup)
     * [Prerequisites](#prerequisites)
-    * [Installation via CocoaPods](#installation-via-cocoapodss)
+    * [Installation via CocoaPods](#installation-via-cocoapods)
     * [Installation via Carthage](#installation-via-carthage)
     * [Manual installation](#manual-installation)
+    * [Migrating to v1.0](#migrating-to-v10)
     * [Migrating to v0.20](#migrating-to-v020)
     * [Migrating to v0.19](#migrating-to-v019)
 * [Implementation](#implementation)
