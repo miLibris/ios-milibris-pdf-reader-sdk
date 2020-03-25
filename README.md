@@ -5,9 +5,10 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
 * [Setup](#setup)
     * [Prerequisites](#prerequisites)
     * [Installation via CocoaPods](#installation_via_cocoapods)
+    * [Installation via Carthage](#installation_via_carthage)
     * [Manual installation](#manual_installation)
-    * [Migrating to v0.19](#migrating_to_v019)
     * [Migrating to v0.20](#migrating_to_v020)
+    * [Migrating to v0.19](#migrating_to_v019)
 * [Implementation](#implementation)
     * [Usual workflow](#usual_workflow)
     * [Unpack a complete archive with MLFoundation](#unpack_a_complete_archive_with_mlfoundation)
@@ -22,23 +23,53 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
 
 MLPDFReaderSDK requires iOS 10 or later, Xcode 11 or later. The SDK is provided as a dynamic framework.
 
-### Installation via CocoaPods
+Every app using the SDK must be configured with a licence key provided by miLibris. A licence key cannot be used in more than one application.
 
-* Copy *MLPDFReaderSDK.framework* and *MLPDFReaderSDK.podspec* in the root of your project, in a directory called *MLPDFReaderSDK*.
+* In your Xcode project, open your main target *Info.plist*
+
+* Add a new key named *MLPDFReaderSDKLicenceKey* of type *String*.
+
+* In the value field, add the licence key provided by miLibris.
+
+### Installation via CocoaPods
 
 * Add the following line in your *Podfile*:
 
-`pod 'MLPDFReaderSDK', :path => 'MLPDFReaderSDK`
+`pod 'MLPDFReaderSDK', '~> 1.0'`
 
 * Run `pod install`
 
+### Installation via Carthage
+
+* Add the following line in your *Cartfile*:
+
+`binary "https://raw.githubusercontent.com/miLibris/ios-milibris-pdf-reader-sdk/master/MLPDFReaderSDK.json" ~> 1.0`
+
+* Run `carthage update`
+
 ### Manual installation
+
+* Download and unzip the SDK: https://seafile.milibris.com/d/2010f87178/files/?p=/MLPDFReaderSDK_v1.0.0_pre.framework.zip&dl=1
 
 * Drag *MLPDFReaderSDK.framework* into your project's *Embedded Binaries* section in the project editor. In the sheet that appears, make sure *Copy items if needed* is checked, then click *Finish*.
 
 * In the Build Phases tab of the project editor, click the + button at the top and select *New Run Script Phase*. Enter the following code into the script text field:
 
 `sh "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLPDFReaderSDK.framework/strip-framework.sh"`
+
+### Migrating to v1.0
+
+* Add your app's licence key to your project's Info.plist, as detailed in *Prerequisites*.
+* If you are using CocoaPods to integrate the SDK:
+  - In your *Podfile*, replace `pod 'MLPDFReaderSDK', :path => 'MLPDFReaderSDK'` with `pod 'MLPDFReaderSDK', '~> 1.0'`
+  - Delete the directory *MLPDFReaderSDK* that you previously downloaded manually.
+  - Run `pod update`.
+
+### Migrating to v0.20
+
+* It is no longer necessary to retain the MLPDFReader instance. It is now retained by MLPDFRReaderViewController, which must be initialized with the reader.
+* MLPDFReader initializer now throws instead of returning nil if an error occurs (for example, if the provided path does not contain a valid unpacked release).
+* The signature of the delegate method used to close the reader view controller has changed in order to provide the view controller that should be dismissed.
 
 ### Migrating to v0.19
 
@@ -58,12 +89,6 @@ MLPDFReaderSDK requires iOS 10 or later, Xcode 11 or later. The SDK is provided 
     * libMLPDFReader.a
     * libMLFoundation.a
     * libSDWebImage.a (if present)
-
-### Migrating to v0.20
-
-* It is no longer necessary to retain the MLPDFReader instance. It is now retained by MLPDFRReaderViewController, which must be initialized with the reader.
-* MLPDFReader initializer now throws instead of returning nil if an error occurs (for example, if the provided path does not contain a valid unpacked release).
-* The signature of the delegate method used to close the reader view controller has changed in order to provide the view controller that should be dismissed.
 
 ## Implementation
 
@@ -115,6 +140,9 @@ An MLPDFReaderDelegate instance must be provided in order to be able to close th
 A sample project is provided to help you implement the reader integration. It contains an example to unpack a complete archive and to open if with MLPDFReader.
 
 If your miLibris content has articles, you can implement your own sharing solution by implementing the MLPDFRArticleSharingPlugin protocol. A basic example is also provided in the sample project.
+
+* If you use CocoaPods, run `pod install` in the *sample_cocoapods* directory and then open *MLPDFReaderSDKSample.xcworkspace*.
+* If you use Carthage, run `carthage update` in the *sample_carthage* directory and then open *MLPDFReaderSDKSample.xcodeproj*.
 
 ### Overriding icons
 
