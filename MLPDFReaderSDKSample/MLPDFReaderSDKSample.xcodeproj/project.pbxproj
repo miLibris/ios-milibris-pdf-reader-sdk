@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55694864216659D8007D2801 /* MLPDFReaderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55694863216659D8007D2801 /* MLPDFReaderSDK.framework */; };
-		55694865216659D8007D2801 /* MLPDFReaderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55694863216659D8007D2801 /* MLPDFReaderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5569486A21667F0C007D2801 /* sample.complete in Resources */ = {isa = PBXBuildFile; fileRef = 5569486921667F0C007D2801 /* sample.complete */; };
+		7C9FC70CAED647CE97C34AB1 /* libPods-MLPDFReaderSDKSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9473825885FE6D46E804BB9A /* libPods-MLPDFReaderSDKSample.a */; };
 		7E5C21371B9EE95900FF1A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C21361B9EE95900FF1A34 /* AppDelegate.swift */; };
 		7E5C21391B9EE95900FF1A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C21381B9EE95900FF1A34 /* ViewController.swift */; };
 		7E5C213C1B9EE95900FF1A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C213A1B9EE95900FF1A34 /* Main.storyboard */; };
@@ -19,22 +18,8 @@
 		7E5C218F1B9F2CAB00FF1A34 /* MyArticleSharingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C218E1B9F2CAB00FF1A34 /* MyArticleSharingPlugin.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		55694866216659D9007D2801 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				55694865216659D8007D2801 /* MLPDFReaderSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		55694863216659D8007D2801 /* MLPDFReaderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLPDFReaderSDK.framework; path = ../MLPDFReaderSDK.framework; sourceTree = "<group>"; };
+		5385FF547E5B4D1171278EF8 /* Pods-MLPDFReaderSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPDFReaderSDKSample.release.xcconfig"; path = "Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		5569486921667F0C007D2801 /* sample.complete */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.complete; sourceTree = "<group>"; };
 		55B784EA21E3B41100E29843 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		55B784EB21E3B41100E29843 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -47,6 +32,8 @@
 		7E5C21401B9EE95900FF1A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7E5C218C1B9F2A2800FF1A34 /* ReaderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
 		7E5C218E1B9F2CAB00FF1A34 /* MyArticleSharingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyArticleSharingPlugin.swift; sourceTree = "<group>"; };
+		9473825885FE6D46E804BB9A /* libPods-MLPDFReaderSDKSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLPDFReaderSDKSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47DF6D143C3A0D8DDF1D889 /* Pods-MLPDFReaderSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPDFReaderSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,19 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55694864216659D8007D2801 /* MLPDFReaderSDK.framework in Frameworks */,
+				7C9FC70CAED647CE97C34AB1 /* libPods-MLPDFReaderSDKSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5569486721665A04007D2801 /* Frameworks */ = {
+		07330A2F071EEBB154B2D434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55694863216659D8007D2801 /* MLPDFReaderSDK.framework */,
+				9473825885FE6D46E804BB9A /* libPods-MLPDFReaderSDKSample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B0B22F1E49E24BADF10B5EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C47DF6D143C3A0D8DDF1D889 /* Pods-MLPDFReaderSDKSample.debug.xcconfig */,
+				5385FF547E5B4D1171278EF8 /* Pods-MLPDFReaderSDKSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		7E5C21281B9EE95900FF1A34 = {
@@ -74,8 +70,9 @@
 			children = (
 				7E5C21331B9EE95900FF1A34 /* MLPDFReaderSDKSample */,
 				7E5C21831B9F1C9300FF1A34 /* Resources */,
-				5569486721665A04007D2801 /* Frameworks */,
 				7E5C21321B9EE95900FF1A34 /* Products */,
+				7B0B22F1E49E24BADF10B5EC /* Pods */,
+				07330A2F071EEBB154B2D434 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,11 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E5C21501B9EE95900FF1A34 /* Build configuration list for PBXNativeTarget "MLPDFReaderSDKSample" */;
 			buildPhases = (
+				830086A84F9942D5555021B1 /* [CP] Check Pods Manifest.lock */,
 				7E5C212D1B9EE95900FF1A34 /* Sources */,
 				7E5C212E1B9EE95900FF1A34 /* Frameworks */,
 				7E5C212F1B9EE95900FF1A34 /* Resources */,
-				55694866216659D9007D2801 /* Embed Frameworks */,
-				5569486821665A1A007D2801 /* ShellScript */,
+				BCD7AAA075F745FFF0FEB01E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,7 +185,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5569486821665A1A007D2801 /* ShellScript */ = {
+		830086A84F9942D5555021B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,14 +193,37 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLPDFReaderSDKSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLPDFReaderSDK.framework/strip-framework.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD7AAA075F745FFF0FEB01E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample-frameworks.sh",
+				"${PODS_ROOT}/MLPDFReaderSDK/MLPDFReaderSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLPDFReaderSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -350,13 +370,10 @@
 		};
 		7E5C21511B9EE95900FF1A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47DF6D143C3A0D8DDF1D889 /* Pods-MLPDFReaderSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/..",
-				);
 				INFOPLIST_FILE = MLPDFReaderSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.milibris.$(PRODUCT_NAME:rfc1034identifier)";
@@ -368,13 +385,10 @@
 		};
 		7E5C21521B9EE95900FF1A34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5385FF547E5B4D1171278EF8 /* Pods-MLPDFReaderSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/..",
-				);
 				INFOPLIST_FILE = MLPDFReaderSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.milibris.$(PRODUCT_NAME:rfc1034identifier)";

@@ -13,3 +13,7 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+# CocoaPods
+Pods/
+Podfile.lock
