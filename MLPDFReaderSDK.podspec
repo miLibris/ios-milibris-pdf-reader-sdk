@@ -17,6 +17,5 @@ Pod::Spec.new do |spec|
   spec.source = { :http => "https://seafile.milibris.com/d/2010f87178/files/?p=/MLPDFReaderSDK_v1.0.0_pre.framework.zip&dl=1", :type => "zip" }
 
   spec.vendored_frameworks = 'MLPDFReaderSDK.framework'
-  spec.requires_arc = true
 
 end
