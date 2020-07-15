@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = "10.0"
 
-  spec.source = { :http => "https://seafile.milibris.com/d/2010f87178/files/?p=/MLPDFReaderSDK_v1.0.0_pre.framework.zip&dl=1", :type => "zip" }
+  spec.source = { :http => "https://seafile.milibris.com/d/5b73f30825/files/?p=/MLPDFReaderSDK_v1.0.0.framework.zip&dl=1", :type => "zip" }
 
   spec.vendored_frameworks = 'MLPDFReaderSDK.framework'
 
