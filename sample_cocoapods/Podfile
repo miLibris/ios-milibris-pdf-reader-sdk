@@ -2,6 +2,6 @@ platform :ios, '10.0'
 
 target 'MLPDFReaderSDKSample' do
 
-  pod 'MLPDFReaderSDK', :podspec => '../MLPDFReaderSDK.podspec'
+  pod 'MLPDFReaderSDK', '~> 1.0'
 
 end
