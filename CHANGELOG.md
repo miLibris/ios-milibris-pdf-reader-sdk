@@ -1,5 +1,10 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.1.0
+23/09/2020
+
+- Add configuration *enableDoublePages* (true by default) to enable/disable double pages in landscape
+
 ### v1.0.0
 15/07/2020
 
