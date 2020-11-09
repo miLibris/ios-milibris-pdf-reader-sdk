@@ -22,7 +22,7 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
 
 ### Prerequisites
 
-MLPDFReaderSDK requires iOS 10 or later, Xcode 11 or later. The SDK is provided as a dynamic framework.
+MLPDFReaderSDK requires iOS 11 or later, Xcode 12 or later. The SDK is provided as an XCFramework and a dynamic framework.
 
 Every app using the SDK must be configured with a licence key provided by miLibris. A licence key cannot be used in more than one application.
 
@@ -32,7 +32,7 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 * In the value field, add the licence key provided by miLibris.
 
-### Installation via CocoaPods
+### Installation via CocoaPods (requires CocoaPods 1.9 or greater)
 
 * Add the following line in your *Podfile*:
 
@@ -48,15 +48,23 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 * Run `carthage update`
 
+### Installation via Swift Package Manager
+
+* In your Xcode project, select *File* > *Swift Packages* > *Add Package Dependency...*
+
+* In the URL field, paste *https://github.com/miLibris/ios-milibris-pdf-reader-sdk* and select *Next*
+
+* Select the update rule: "Up to next major" from the current version
+
+* Add the product "MLPDFReaderSDK" to your app target
+
 ### Manual installation
 
-* Download and unzip the SDK: https://seafile.milibris.com/d/2010f87178/files/?p=/MLPDFReaderSDK_v1.0.0_pre.framework.zip&dl=1
+* Download and unzip the SDK: https://seafile.milibris.com/d/5fabcc8fe9/files/?p=/MLPDFReaderSDK_vspm.xcframework.zip&dl=1
 
-* Drag *MLPDFReaderSDK.framework* into your project's *Embedded Binaries* section in the project editor. In the sheet that appears, make sure *Copy items if needed* is checked, then click *Finish*.
+* Copy *MLPDFReaderSDK.xcframework* in your project direectory.
 
-* In the Build Phases tab of the project editor, click the + button at the top and select *New Run Script Phase*. Enter the following code into the script text field:
-
-`sh "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLPDFReaderSDK.framework/strip-framework.sh"`
+* Add *MLPDFReaderSDK.xcframework* into your project's *Frameworks, Libraries, and Embedded Content* section in the project editor.
 
 ### Migrating to v1.0
 

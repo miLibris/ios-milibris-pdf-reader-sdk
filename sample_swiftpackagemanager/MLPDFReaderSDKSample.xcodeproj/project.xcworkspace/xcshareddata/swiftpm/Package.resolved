@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MLPDFReaderSDK",
+        "repositoryURL": "https://github.com/miLibris/ios-milibris-pdf-reader-sdk",
+        "state": {
+          "branch": null,
+          "revision": "98a70fe5cfce7d8573280d443af492fd328a1619",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
