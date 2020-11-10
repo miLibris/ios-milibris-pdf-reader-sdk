@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A1693745145E8178E44D3EB /* MyArticleSharingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */; };
 		1DBCC367FBB33D850A0F498D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C8385440019C559C25FFB8 /* Main.storyboard */; };
+		5509F803255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5509F802255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework */; };
+		5509F804255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5509F802255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A056AD320345077B6051C8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14D8B431ECDA4E991456C68 /* LaunchScreen.xib */; };
 		C63093C7CC4E57E14E951610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45F04E45CA73B137E0029A /* ViewController.swift */; };
 		CB24C19EA1FA9F9207531D0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F48AD48084DB848F3DAD983 /* Images.xcassets */; };
@@ -17,10 +19,25 @@
 		F2F901EBBCCB824EF9C09088 /* sample.complete in Resources */ = {isa = PBXBuildFile; fileRef = BCF77A3A077C5EB2BBAFF259 /* sample.complete */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5509F806255AE2A900EDEDF0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5509F804255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07897935947732EC500A145D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		222E5AB409C32D7BBA32A4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3F59CD43F49883C7C8B0D4C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5509F802255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MLPDFReaderSDK.xcframework; path = "/Users/maximelemoine/Library/Developer/Xcode/DerivedData/MLPDFReaderSDKSample-ekdyprggkuonujawvevvysgirsvz/SourcePackages/artifacts/MLPDFReaderSDK/MLPDFReaderSDK.xcframework"; sourceTree = "<absolute>"; };
 		5A3E791279901BF879B9837B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		5F48AD48084DB848F3DAD983 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84EBA5D6756BA476EB0E83B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -31,6 +48,17 @@
 		D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArticleSharingPlugin.swift; sourceTree = "<group>"; };
 		FED61A69AA9E6B9BD11D31C3 /* MLPDFReaderSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPDFReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5509F805255AE2A900EDEDF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5509F803255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3530CCA383698DAB2CB013A8 /* Resources */ = {
@@ -63,7 +91,16 @@
 			children = (
 				3815A5D9CB320829875F5484 /* MLPDFReaderSDKSample */,
 				EC457206F66814A1AF0F4169 /* Products */,
+				5509F801255AE2A900EDEDF0 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		5509F801255AE2A900EDEDF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5509F802255AE2A900EDEDF0 /* MLPDFReaderSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EC457206F66814A1AF0F4169 /* Products */ = {
@@ -83,6 +120,8 @@
 			buildPhases = (
 				BA8DE9E406A2720B1901DB2D /* Sources */,
 				7750EF55E599E7C56185985F /* Resources */,
+				5509F805255AE2A900EDEDF0 /* Frameworks */,
+				5509F806255AE2A900EDEDF0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +142,7 @@
 		19F3A183F5B5F71060F8243C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1210;
 			};
 			buildConfigurationList = 8D37DEB1CF8E6DEE0E64E820 /* Build configuration list for PBXProject "MLPDFReaderSDKSample" */;
 			compatibilityVersion = "Xcode 10.0";
