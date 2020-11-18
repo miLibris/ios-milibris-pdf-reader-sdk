@@ -1,5 +1,10 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.1.1
+18/11/2020
+
+- Fix iOS 13 regression: show enrichments in full screen
+
 ### v1.1.0
 23/09/2020
 
