@@ -18,4 +18,6 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = 'MLPDFReaderSDK.framework'
 
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+
 end
