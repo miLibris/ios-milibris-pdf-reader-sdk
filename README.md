@@ -58,8 +58,6 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 * Add the product "MLPDFReaderSDK" to your app target
 
-* Add *MLPDFReaderSDK.xcframework* into your project's *Embedded Content* section in the project editor.
-
 ### Manual installation
 
 * Download and unzip the SDK: https://seafile.milibris.com/d/5fabcc8fe9/files/?p=/MLPDFReaderSDK_vspm.xcframework.zip&dl=1
