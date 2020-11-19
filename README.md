@@ -22,7 +22,7 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
 
 ### Prerequisites
 
-MLPDFReaderSDK requires iOS 11 or later, Xcode 12 or later. The SDK is provided as an XCFramework and a dynamic framework.
+MLPDFReaderSDK requires iOS 11 or later, Xcode 12 or later. The SDK is provided as a dynamic XCFramework or a dynamic framework.
 
 Every app using the SDK must be configured with a licence key provided by miLibris. A licence key cannot be used in more than one application.
 
@@ -60,7 +60,7 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 ### Manual installation
 
-* Download and unzip the SDK: https://seafile.milibris.com/d/5fabcc8fe9/files/?p=/MLPDFReaderSDK_vspm.xcframework.zip&dl=1
+* Download and unzip the SDK: https://seafile.milibris.com/d/115f2510b6/files/?p=/MLPDFReaderSDK_v1.2.0.xcframework.zip&dl=1
 
 * Copy *MLPDFReaderSDK.xcframework* in your project direectory.
 

@@ -1,5 +1,14 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.2.0
+19/11/2020
+
+- Update deployment target to iOS 11
+- Requires Xcode 12 or later
+
+- Add support for Swift Package Manager
+- Provide SDK as an XCFramework for CocoaPods and Swift Package Manager. A fat framework is still provided for Carthage compatibility.
+
 ### v1.1.0
 23/09/2020
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MLPDFReaderSDK"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
 
   spec.summary      = "miLibris iOS PDF Reader SDK"
   spec.description  = <<-DESC
@@ -17,9 +17,9 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "10.0"
 
   spec.source = {
-    :http => "https://seafile.milibris.com/d/5fabcc8fe9/files/?p=/MLPDFReaderSDK_vspm.xcframework.zip&dl=1",
+    :http => "https://seafile.milibris.com/d/115f2510b6/files/?p=/MLPDFReaderSDK_v1.2.0.xcframework.zip&dl=1",
     :type => "zip",
-    :sha256 => 'a7de04ae38f68768ca594d8f577dcfc8fcd8094d5f7a79168eccf77a7baf17f9'
+    :sha256 => '41b65d79ac5f1db1e0861fb4b286baf38e1ac52090c394fbfa526b0282609fba'
   }
 
   spec.vendored_frameworks = 'MLPDFReaderSDK.xcframework'
