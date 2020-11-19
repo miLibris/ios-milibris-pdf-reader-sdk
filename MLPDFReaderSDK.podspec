@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MLPDFReaderSDK"
-  spec.version      = "1.1.1"
+  spec.version      = "1.2.0"
 
   spec.summary      = "miLibris iOS PDF Reader SDK"
   spec.description  = <<-DESC
@@ -12,11 +12,17 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'Copyright', :text => 'Copyright miLibris 2020' }
   spec.author       = { "miLibris" => "support@milibris.com" }
 
-  spec.ios.deployment_target = "10.0"
+  spec.cocoapods_version = '>= 1.9'
 
-  spec.source = { :http => "https://seafile.milibris.com/d/b422f2b2a8/files/?p=/MLPDFReaderSDK_v1.1.1.framework.zip&dl=1", :type => "zip" }
+  spec.ios.deployment_target = "11.0"
 
-  spec.vendored_frameworks = 'MLPDFReaderSDK.framework'
+  spec.source = {
+    :http => "https://seafile.milibris.com/d/115f2510b6/files/?p=/MLPDFReaderSDK_v1.2.0.xcframework.zip&dl=1",
+    :type => "zip",
+    :sha256 => '41b65d79ac5f1db1e0861fb4b286baf38e1ac52090c394fbfa526b0282609fba'
+  }
+
+  spec.vendored_frameworks = 'MLPDFReaderSDK.xcframework'
 
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
 

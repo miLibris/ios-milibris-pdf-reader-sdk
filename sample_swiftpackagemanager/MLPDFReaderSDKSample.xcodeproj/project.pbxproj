@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1693745145E8178E44D3EB /* MyArticleSharingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */; };
+		1DBCC367FBB33D850A0F498D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C8385440019C559C25FFB8 /* Main.storyboard */; };
+		559F075D2566B53C00161895 /* MLPDFReaderSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 559F075C2566B53C00161895 /* MLPDFReaderSDK */; };
+		8A056AD320345077B6051C8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14D8B431ECDA4E991456C68 /* LaunchScreen.xib */; };
+		C63093C7CC4E57E14E951610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45F04E45CA73B137E0029A /* ViewController.swift */; };
+		CB24C19EA1FA9F9207531D0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F48AD48084DB848F3DAD983 /* Images.xcassets */; };
+		DA92DE31E7849839347BCAB4 /* ReaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECD6BDCC5C8BA1BC3ACAB /* ReaderConfiguration.swift */; };
+		DD4BD059FF9A285FA8F20D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CD43F49883C7C8B0D4C9 /* AppDelegate.swift */; };
+		F2F901EBBCCB824EF9C09088 /* sample.complete in Resources */ = {isa = PBXBuildFile; fileRef = BCF77A3A077C5EB2BBAFF259 /* sample.complete */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07897935947732EC500A145D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		222E5AB409C32D7BBA32A4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3F59CD43F49883C7C8B0D4C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A3E791279901BF879B9837B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		5F48AD48084DB848F3DAD983 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84EBA5D6756BA476EB0E83B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		91AF09EF9DF010043C98D067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A99ECD6BDCC5C8BA1BC3ACAB /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
+		BCF77A3A077C5EB2BBAFF259 /* sample.complete */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.complete; sourceTree = "<group>"; };
+		CD45F04E45CA73B137E0029A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArticleSharingPlugin.swift; sourceTree = "<group>"; };
+		FED61A69AA9E6B9BD11D31C3 /* MLPDFReaderSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPDFReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5509F805255AE2A900EDEDF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F075D2566B53C00161895 /* MLPDFReaderSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3530CCA383698DAB2CB013A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCF77A3A077C5EB2BBAFF259 /* sample.complete */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3815A5D9CB320829875F5484 /* MLPDFReaderSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				3F59CD43F49883C7C8B0D4C9 /* AppDelegate.swift */,
+				5F48AD48084DB848F3DAD983 /* Images.xcassets */,
+				222E5AB409C32D7BBA32A4BD /* Info.plist */,
+				A14D8B431ECDA4E991456C68 /* LaunchScreen.xib */,
+				70C8385440019C559C25FFB8 /* Main.storyboard */,
+				D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */,
+				A99ECD6BDCC5C8BA1BC3ACAB /* ReaderConfiguration.swift */,
+				CD45F04E45CA73B137E0029A /* ViewController.swift */,
+				3530CCA383698DAB2CB013A8 /* Resources */,
+			);
+			name = MLPDFReaderSDKSample;
+			path = ../MLPDFReaderSDKSample;
+			sourceTree = "<group>";
+		};
+		4036589151AE529AAAB19974 = {
+			isa = PBXGroup;
+			children = (
+				3815A5D9CB320829875F5484 /* MLPDFReaderSDKSample */,
+				EC457206F66814A1AF0F4169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC457206F66814A1AF0F4169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED61A69AA9E6B9BD11D31C3 /* MLPDFReaderSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7F5D53347756757C0FE4EE8 /* MLPDFReaderSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A2ADAEEED0A1C61685843E4 /* Build configuration list for PBXNativeTarget "MLPDFReaderSDKSample" */;
+			buildPhases = (
+				BA8DE9E406A2720B1901DB2D /* Sources */,
+				7750EF55E599E7C56185985F /* Resources */,
+				5509F805255AE2A900EDEDF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLPDFReaderSDKSample;
+			packageProductDependencies = (
+				559F075C2566B53C00161895 /* MLPDFReaderSDK */,
+			);
+			productName = MLPDFReaderSDKSample;
+			productReference = FED61A69AA9E6B9BD11D31C3 /* MLPDFReaderSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19F3A183F5B5F71060F8243C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+			};
+			buildConfigurationList = 8D37DEB1CF8E6DEE0E64E820 /* Build configuration list for PBXProject "MLPDFReaderSDKSample" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 4036589151AE529AAAB19974;
+			packageReferences = (
+				559F075B2566B53C00161895 /* XCRemoteSwiftPackageReference "ios-milibris-pdf-reader-sdk" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F5D53347756757C0FE4EE8 /* MLPDFReaderSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7750EF55E599E7C56185985F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB24C19EA1FA9F9207531D0F /* Images.xcassets in Resources */,
+				8A056AD320345077B6051C8F /* LaunchScreen.xib in Resources */,
+				1DBCC367FBB33D850A0F498D /* Main.storyboard in Resources */,
+				F2F901EBBCCB824EF9C09088 /* sample.complete in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA8DE9E406A2720B1901DB2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4BD059FF9A285FA8F20D10 /* AppDelegate.swift in Sources */,
+				1A1693745145E8178E44D3EB /* MyArticleSharingPlugin.swift in Sources */,
+				DA92DE31E7849839347BCAB4 /* ReaderConfiguration.swift in Sources */,
+				C63093C7CC4E57E14E951610 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70C8385440019C559C25FFB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07897935947732EC500A145D /* Base */,
+				5A3E791279901BF879B9837B /* fr */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A14D8B431ECDA4E991456C68 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91AF09EF9DF010043C98D067 /* Base */,
+				84EBA5D6756BA476EB0E83B3 /* fr */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25B77CCEDAB04F9FBB8CE2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2812C0D350142D5EA3290782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../MLPDFReaderSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.milibris.MLPDFReaderSDKSample;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EC5E7E3C5DE3A51107D338D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BED2BA00015062E20AF27B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../MLPDFReaderSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.milibris.MLPDFReaderSDKSample;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A2ADAEEED0A1C61685843E4 /* Build configuration list for PBXNativeTarget "MLPDFReaderSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED2BA00015062E20AF27B3B /* Debug */,
+				2812C0D350142D5EA3290782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		8D37DEB1CF8E6DEE0E64E820 /* Build configuration list for PBXProject "MLPDFReaderSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC5E7E3C5DE3A51107D338D /* Debug */,
+				25B77CCEDAB04F9FBB8CE2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		559F075B2566B53C00161895 /* XCRemoteSwiftPackageReference "ios-milibris-pdf-reader-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/miLibris/ios-milibris-pdf-reader-sdk";
+			requirement = {
+				kind = revision;
+				revision = e3406308d4b5d546e7260b6711739ac1586512a1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		559F075C2566B53C00161895 /* MLPDFReaderSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 559F075B2566B53C00161895 /* XCRemoteSwiftPackageReference "ios-milibris-pdf-reader-sdk" */;
+			productName = MLPDFReaderSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 19F3A183F5B5F71060F8243C /* Project object */;
+}
