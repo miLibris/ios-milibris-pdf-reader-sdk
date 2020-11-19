@@ -362,8 +362,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/miLibris/ios-milibris-pdf-reader-sdk";
 			requirement = {
-				kind = revision;
-				revision = e3406308d4b5d546e7260b6711739ac1586512a1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

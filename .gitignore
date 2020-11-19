@@ -21,3 +21,6 @@ Podfile.lock
 # Carthage
 Carthage/
 Cartfile.resolved
+
+# Swift Package Manager
+Package.resolved
