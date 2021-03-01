@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1A1693745145E8178E44D3EB /* MyArticleSharingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */; };
 		1DBCC367FBB33D850A0F498D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C8385440019C559C25FFB8 /* Main.storyboard */; };
+		55FDE7D325ED557200332AFF /* ReaderSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDE7D025ED557200332AFF /* ReaderSession.swift */; };
+		55FDE7D425ED557200332AFF /* ShareLinkToWebKiosk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDE7D125ED557200332AFF /* ShareLinkToWebKiosk.swift */; };
+		55FDE7D525ED557200332AFF /* SendArticleByEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDE7D225ED557200332AFF /* SendArticleByEmail.swift */; };
 		8A056AD320345077B6051C8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14D8B431ECDA4E991456C68 /* LaunchScreen.xib */; };
 		AE07123F45AB2F281AFCA47F /* libPods-MLPDFReaderSDKSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B90B434B2007EA05F293CEB /* libPods-MLPDFReaderSDKSample.a */; };
 		C63093C7CC4E57E14E951610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45F04E45CA73B137E0029A /* ViewController.swift */; };
@@ -24,13 +27,16 @@
 		222E5AB409C32D7BBA32A4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3F59CD43F49883C7C8B0D4C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C67D8B9ECD4057BFD00B86 /* Pods-MLPDFReaderSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPDFReaderSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		55FDE7D025ED557200332AFF /* ReaderSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderSession.swift; sourceTree = "<group>"; };
+		55FDE7D125ED557200332AFF /* ShareLinkToWebKiosk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareLinkToWebKiosk.swift; sourceTree = "<group>"; };
+		55FDE7D225ED557200332AFF /* SendArticleByEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendArticleByEmail.swift; sourceTree = "<group>"; };
 		5A3E791279901BF879B9837B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		5F48AD48084DB848F3DAD983 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84EBA5D6756BA476EB0E83B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		91AF09EF9DF010043C98D067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A2BD4806D3136F9B41186856 /* Pods-MLPDFReaderSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPDFReaderSDKSample.release.xcconfig"; path = "Target Support Files/Pods-MLPDFReaderSDKSample/Pods-MLPDFReaderSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		A99ECD6BDCC5C8BA1BC3ACAB /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
-		BCF77A3A077C5EB2BBAFF259 /* sample.complete */ = {isa = PBXFileReference; path = sample.complete; sourceTree = "<group>"; };
+		BCF77A3A077C5EB2BBAFF259 /* sample.complete */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.complete; sourceTree = "<group>"; };
 		CD45F04E45CA73B137E0029A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArticleSharingPlugin.swift; sourceTree = "<group>"; };
 		FED61A69AA9E6B9BD11D31C3 /* MLPDFReaderSDKSample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MLPDFReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +73,7 @@
 				D713371A6735A12C55D910C7 /* MyArticleSharingPlugin.swift */,
 				A99ECD6BDCC5C8BA1BC3ACAB /* ReaderConfiguration.swift */,
 				CD45F04E45CA73B137E0029A /* ViewController.swift */,
+				55FDE7CF25ED557200332AFF /* Sharing */,
 				3530CCA383698DAB2CB013A8 /* Resources */,
 			);
 			name = MLPDFReaderSDKSample;
@@ -83,6 +90,16 @@
 			);
 			sourceTree = "<group>";
 		};
+		55FDE7CF25ED557200332AFF /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				55FDE7D025ED557200332AFF /* ReaderSession.swift */,
+				55FDE7D125ED557200332AFF /* ShareLinkToWebKiosk.swift */,
+				55FDE7D225ED557200332AFF /* SendArticleByEmail.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
 		8ADF9705AB5B3A536A5E6BD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +114,6 @@
 				55C67D8B9ECD4057BFD00B86 /* Pods-MLPDFReaderSDKSample.debug.xcconfig */,
 				A2BD4806D3136F9B41186856 /* Pods-MLPDFReaderSDKSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,15 +153,14 @@
 		19F3A183F5B5F71060F8243C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 8D37DEB1CF8E6DEE0E64E820 /* Build configuration list for PBXProject "MLPDFReaderSDKSample" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 				fr,
 			);
@@ -220,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FDE7D525ED557200332AFF /* SendArticleByEmail.swift in Sources */,
 				DD4BD059FF9A285FA8F20D10 /* AppDelegate.swift in Sources */,
+				55FDE7D425ED557200332AFF /* ShareLinkToWebKiosk.swift in Sources */,
 				1A1693745145E8178E44D3EB /* MyArticleSharingPlugin.swift in Sources */,
 				DA92DE31E7849839347BCAB4 /* ReaderConfiguration.swift in Sources */,
+				55FDE7D325ED557200332AFF /* ReaderSession.swift in Sources */,
 				C63093C7CC4E57E14E951610 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +295,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -295,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -347,6 +366,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -371,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

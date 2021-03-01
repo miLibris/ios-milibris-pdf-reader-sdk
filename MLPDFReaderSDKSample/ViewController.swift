@@ -36,6 +36,13 @@ class ViewController: UIViewController, MLPDFReaderDelegate {
             // Initialize the PDF Reader to open the context
             let reader = try MLPDFReader(contentURL: releaseURL, config: ReaderConfiguration(), delegate: self)
 
+            // Retain a session with the current reader session information.
+            // This session will be accessible from sharing plugins.
+            ReaderSession.current = ReaderSession(
+                // replace with the issue MID that is being read (from miLibris API)
+                issueMID: "bbc8c404-c945-4518-924a-c766cdd399d8"
+            )
+
             // Create a view controller and display it
             let readerViewController = MLPDFRReaderViewController(pdfReader: reader)
             present(readerViewController, animated: true)

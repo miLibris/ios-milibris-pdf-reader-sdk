@@ -12,8 +12,10 @@ import UIKit
 class ReaderConfiguration: MLPDFReaderBaseConfiguration {
 
     override func articleSharingPlugins() -> [MLPDFRArticleSharingPlugin] {
-        // Custom article sharing plugin
-        return [MyArticleSharingPlugin()]
+        return [
+            ShareLinkToWebKiosk(kioskURL: URL(string: "https://www.examplekiosk.milibris.com")!),
+            SendArticleByEmail(),
+        ]
     }
 
 }

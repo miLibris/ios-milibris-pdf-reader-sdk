@@ -144,14 +144,25 @@ An MLPDFReaderDelegate instance must be provided in order to be able to close th
         self.dismiss(animated: true)
     }
 
+### Sharing an article
+
+If your miLibris content has articles, you can implement your own sharing solution by implementing the MLPDFRArticleSharingPlugin protocol. Two examples are provided in the sample project:
+
+#### Share link to web kiosk
+
+Share the web kiosk URL of an article. The user can use the social app of his/her choice. This feature must be enabled on the web kiosk. Contact miLibris support for more info.
+
+#### Send article by email
+
+Send the content of an article by email. This plugin only works if the user has an account configured in the default mail app.
+
 ### Sample project
 
-A sample project is provided to help you implement the reader integration. It contains an example to unpack a complete archive and to open if with MLPDFReader.
-
-If your miLibris content has articles, you can implement your own sharing solution by implementing the MLPDFRArticleSharingPlugin protocol. A basic example is also provided in the sample project.
+A sample project is provided to help you implement the reader integration. It contains an example to unpack a complete archive and to open if with MLPDFReader. It also contains two sharing plugins.
 
 * If you use CocoaPods, run `pod install` in the *sample_cocoapods* directory and then open *MLPDFReaderSDKSample.xcworkspace*.
 * If you use Carthage, run `carthage update` in the *sample_carthage* directory and then open *MLPDFReaderSDKSample.xcodeproj*.
+* If you use Swift Package Manager, open *MLPDFReaderSDKSample.xcodeproj* in the *sample_swiftpackagemanager* directory.
 
 ### Overriding icons
 
