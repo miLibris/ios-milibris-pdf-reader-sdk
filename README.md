@@ -14,6 +14,7 @@ MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It incl
     * [Usual workflow](#usual-workflow)
     * [Unpack a complete archive with MLFoundation](#unpack-a-complete-archive-with-mlfoundation)
     * [Read unpacked contents](#read-unpacked-contents)
+    * [Sharing an article](#sharing-an-article)
     * [Sample project](#sample-project)
     * [Overriding icons](#overriding-icons)
     * [Overriding strings](#overriding-strings)
