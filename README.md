@@ -61,7 +61,7 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 ### Manual installation
 
-* Download and unzip the SDK: https://seafile.milibris.com/d/115f2510b6/files/?p=/MLPDFReaderSDK_v1.2.0.xcframework.zip&dl=1
+* Download and unzip the SDK: https://seafile.milibris.com/d/22f2a82dbc/files/?p=/MLPDFReaderSDK_v1.3.0.xcframework.zip&dl=1
 
 * Copy *MLPDFReaderSDK.xcframework* in your project direectory.
 

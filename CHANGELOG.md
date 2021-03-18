@@ -1,5 +1,14 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.3.0
+18/03/2021
+
+- Apply orientation configuration on modals
+- Capitalize day of week in the subtitle in the default configuration
+
+- Add configuration *supportedInterfaceOrientations* (all by default) to customize the device orientations supported by the reader and its modals
+- Deprecate `pdfReader:supportedInterfaceOrientationsForController:` that was only applied on the root view controller of the reader
+
 ### v1.2.0
 19/11/2020
 
