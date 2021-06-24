@@ -1,5 +1,10 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.3.1
+24/06/2021
+
+- Make reader top bar non opaque to improve color customization
+
 ### v1.3.0
 18/03/2021
 
