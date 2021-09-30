@@ -1,5 +1,16 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.4.0
+30/09/2021
+
+- Build SDK with Xcode 13
+- Add support for downloading the XCFramework with Carthage (requires Carthage >= 0.38.0)
+
+### v1.3.2
+29/09/2021
+
+- Fix article scroll indicator color in dark mode on iOS 15
+
 ### v1.3.1
 24/06/2021
 

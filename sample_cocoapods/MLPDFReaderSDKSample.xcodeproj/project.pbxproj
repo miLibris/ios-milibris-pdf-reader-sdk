@@ -153,7 +153,7 @@
 		19F3A183F5B5F71060F8243C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 8D37DEB1CF8E6DEE0E64E820 /* Build configuration list for PBXProject "MLPDFReaderSDKSample" */;
 			compatibilityVersion = "Xcode 10.0";

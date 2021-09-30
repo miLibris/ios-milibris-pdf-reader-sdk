@@ -47,7 +47,8 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 `binary "https://raw.githubusercontent.com/miLibris/ios-milibris-pdf-reader-sdk/master/MLPDFReaderSDK.json" ~> 1.0`
 
-* Run `carthage update`
+* To use the XCFramework (recommended, requires Carthage >= 0.38.0), run `carthage update --use-xcframeworks`
+* To use the framework, run `carthage update`
 
 ### Installation via Swift Package Manager
 
@@ -61,7 +62,7 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 
 ### Manual installation
 
-* Download and unzip the SDK: https://seafile.milibris.com/d/2ac279fbc3/files/?p=/MLPDFReaderSDK_v1.3.1.xcframework.zip&dl=1
+* Download and unzip the SDK: https://seafile.milibris.com/d/b7d4238f05/files/?p=/MLPDFReaderSDK_v1.4.0.xcframework.zip&dl=1
 
 * Copy *MLPDFReaderSDK.xcframework* in your project direectory.
 
