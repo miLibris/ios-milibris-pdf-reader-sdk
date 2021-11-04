@@ -1,5 +1,10 @@
 # MLPDFReaderSDK iOS changelog
 
+### v1.4.1
+29/10/2021
+
+- Fix enrichment top bar colors when building with Xcode 13
+
 ### v1.4.0
 30/09/2021
 
