@@ -1,4 +1,6 @@
-# MLPDFReaderSDK
+# [OBSOLETE] MLPDFReaderSDK
+
+⚠️ This repository is obsolete and no longer updated. Please use the new miLibris reader at https://github.com/miLibris/ios-milibris-reader-sdk.
 
 MLPDFReaderSDK is the miLibris reading SDK (previously called MLReader). It includes the MLFoundation library allowing to unpack miLibris contents.
 
